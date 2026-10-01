@@ -12,7 +12,8 @@
 ---
 
 ## Quick Navigation
-- 📖 [Complete Project Walkthrough](P3_REVOKE_HDC/docs/PROJECT_WALKTHROUGH.md)
+- 📘 **[Zero-to-Hero Beginner Textbook (BRIEFING.md)](BRIEFING.md)** *(Start here if you are new to HDC and FPGAs!)*
+- 📖 [Complete Engineering Walkthrough](P3_REVOKE_HDC/docs/PROJECT_WALKTHROUGH.md)
 - 🚀 [One-Command Reproduction](#quickstart--reproduction)
 - 📐 [Architectural Design & Sizing](#sparse-journaling--break-even-math)
 - 📊 [Experimental Results & Figures](#experimental-results--figures)
