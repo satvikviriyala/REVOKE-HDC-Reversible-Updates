@@ -1,0 +1,137 @@
+schema_version: revoke_hdc_week1_v1
+document_revision: W1-R1
+source_document_sha256: 38992d4c044d56fda32810f798eb3dccc67e03fb975457de48fc86507cfbb4aa
+prototype:
+  dimensions: 4096
+  bytes: 512
+  classes: 4
+  word_bits: 64
+wire:
+  header_bytes: 16
+  entry_bytes: 3
+  max_entries: 96
+  endianness: little
+  length_formula: 16 + 3*F
+  header_offsets:
+    source_id:
+      offset: '0'
+      bytes: 1
+      bits: '8'
+    update_id:
+      offset: 1-2
+      bytes: 2
+      bits: '16'
+    class_id:
+      offset: '3'
+      bytes: 1
+      bits: '8'
+    sequence:
+      offset: 4-5
+      bytes: 2
+      bits: '16'
+    hA:
+      offset: '6'
+      bytes: 1
+      bits: '8'
+    mA:
+      offset: '7'
+      bytes: 1
+      bits: '8'
+    hB:
+      offset: '8'
+      bytes: 1
+      bits: '8'
+    mB:
+      offset: '9'
+      bytes: 1
+      bits: '8'
+    entry_count (F):
+      offset: '10'
+      bytes: 1
+      bits: '8'
+    length:
+      offset: 11-12
+      bytes: 2
+      bits: '16'
+    reserved/format:
+      offset: '13'
+      bytes: 1
+      bits: '8'
+    checksum:
+      offset: 14-15
+      bytes: 2
+      bits: '16'
+  entry_bits:
+    dimension_index: '11:0'
+    pre_update_residue: '15:12'
+    update_contribution: '19:16'
+    expected_old_bit: 20
+    expected_new_bit: 21
+    reserved: '23:22'
+journal:
+  header_bytes: 16
+  entry_bytes: 2
+  length_formula: 16 + 2*F
+  max_record_bytes: 208
+  ring_capacity_bytes: 262144
+  split_across_wrap: false
+  index_depth: 1024
+  slot_id_bits: 10
+  entry_bits:
+    dimension_index: '11:0'
+    pre_update_residue: '15:12'
+arithmetic:
+  signed_format: 4-bit two-complement
+  residue_min: -8
+  residue_max: 7
+  contribution_min: -8
+  contribution_max: 7
+  source_magnitude_phrase: '|u|<=8'
+  positive_8_encodable: false
+  sum_min: -16
+  sum_max: 14
+  sum_bits_min: 5
+  sign_threshold: 1 if x >= 0 else 0
+crc16:
+  name: CRC-16/CCITT-FALSE
+  polynomial: '0x1021'
+  init: '0xFFFF'
+  refin: false
+  refout: false
+  xorout: '0x0000'
+  checksum_field_zeroed_during_compute: true
+trust_gate:
+  theta_A: null
+  theta_B: null
+  calibration_status: TEAM_EMPIRICAL_INPUT_REQUIRED
+  rule: hA == hB == class_id and mA >= theta_A and mB >= theta_B
+performance_target:
+  pl_clock_hz: 100000000
+  packet_decisions_per_second_target: 50000
+  measured_in_week1: false
+trace:
+  depth_entries: 4096
+  reference_entry_bytes: 16
+  capacity_bytes: 65536
+axi_lite:
+  base_address: '0xA0000000'
+  span_bytes: 65536
+  ps_master: M_AXI_HPM0_FPD
+  interconnect: SmartConnect
+  authoritative_assignment: Vivado Address Editor
+encoder_dataset:
+  encoder: null
+  dataset: null
+  status: TEAM_INPUT_REQUIRED
+outcome_codes:
+  0: accepted
+  1: quarantined
+  2: refused - capacity
+  3: refused - checksum
+  4: refused - residue
+  5: refused - stale
+  6: refused - duplicate
+  7: refused - ordering
+  8: refused - bit-state
+  9: restored
+  10: already-retired

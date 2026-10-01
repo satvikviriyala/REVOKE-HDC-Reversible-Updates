@@ -1,0 +1,12 @@
+digraph G {
+rankdir=LR; graph [bgcolor="white", pad=0.2, nodesep=0.35, ranksep=0.45];
+node [shape=box, style="rounded", fontname="Liberation Sans", fontsize=10];
+edge [fontname="Liberation Sans", fontsize=9];
+H1[label="Modality A\nlabel + margin"]; H2[label="Modality B\nlabel + margin"];
+A[shape=diamond,label="Agreement +\nmargin pass?"]; U[label="Sparse transition\npacket"];
+V[label="Residue + old-bit\nvalidator"]; C[shape=diamond,label="Journal capacity\navailable?"];
+Q[label="Quarantine / refuse"]; J[label="Write source-linked\nsparse record"];
+P[label="Commit packed\nprototype bits"]; R[label="Restoration\nrequest"];
+O[label="Check ID +\nsupported order"]; B[label="Read record +\nrestore bits once"]; L[label="Outcome record"];
+H1->A; H2->A; U->V; A->C; V->C; C->Q [label="no"]; C->J [label="yes"]; J->P; R->O; O->B; B->P; Q->L; P->L;
+}

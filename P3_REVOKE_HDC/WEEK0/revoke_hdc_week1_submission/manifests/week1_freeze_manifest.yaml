@@ -1,0 +1,13 @@
+run_id: P3_REVOKE_HDC_W1_FREEZE_R1_20260925
+date_utc: '2026-09-25'
+team: P3
+project: REVOKE_HDC
+phase: Week 1 freeze
+document_revision: W1-R1
+source_commit: UNSUPPLIED_IN_UPLOADED_MATERIAL
+source_document: WEEK_1.md
+source_document_sha256: 38992d4c044d56fda32810f798eb3dccc67e03fb975457de48fc86507cfbb4aa
+reference_match: bounded - source-frozen widths/codes matched; team empirical inputs
+  explicitly open
+notes: No RTL or software reference model is part of this package. Generated artifacts
+  are contract/evidence documents only.

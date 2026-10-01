@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="400" y="32" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e293b">Figure 3: Journal Record Bytes vs Flip Count (F) &amp; Break-Even Boundary</text>
+<line x1="70" y1="440" x2="760" y2="440" stroke="#e2e8f0" stroke-width="1"/>
+<text x="60" y="444" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#64748b">0 B</text>
+<line x1="70" y1="377" x2="760" y2="377" stroke="#e2e8f0" stroke-width="1"/>
+<text x="60" y="381" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#64748b">100 B</text>
+<line x1="70" y1="314" x2="760" y2="314" stroke="#e2e8f0" stroke-width="1"/>
+<text x="60" y="318" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#64748b">200 B</text>
+<line x1="70" y1="250" x2="760" y2="250" stroke="#e2e8f0" stroke-width="1"/>
+<text x="60" y="254" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#64748b">300 B</text>
+<line x1="70" y1="187" x2="760" y2="187" stroke="#e2e8f0" stroke-width="1"/>
+<text x="60" y="191" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#64748b">400 B</text>
+<line x1="70" y1="124" x2="760" y2="124" stroke="#e2e8f0" stroke-width="1"/>
+<text x="60" y="128" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#64748b">500 B</text>
+<line x1="70" y1="60" x2="760" y2="60" stroke="#e2e8f0" stroke-width="1"/>
+<text x="60" y="64" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#64748b">600 B</text>
+<line x1="70" y1="60" x2="70" y2="440" stroke="#e2e8f0" stroke-width="1"/>
+<text x="70" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">0</text>
+<line x1="168" y1="60" x2="168" y2="440" stroke="#e2e8f0" stroke-width="1"/>
+<text x="168" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">40</text>
+<line x1="267" y1="60" x2="267" y2="440" stroke="#e2e8f0" stroke-width="1"/>
+<text x="267" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">80</text>
+<line x1="365" y1="60" x2="365" y2="440" stroke="#e2e8f0" stroke-width="1"/>
+<text x="365" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">120</text>
+<line x1="464" y1="60" x2="464" y2="440" stroke="#e2e8f0" stroke-width="1"/>
+<text x="464" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">160</text>
+<line x1="562" y1="60" x2="562" y2="440" stroke="#e2e8f0" stroke-width="1"/>
+<text x="562" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">200</text>
+<line x1="661" y1="60" x2="661" y2="440" stroke="#e2e8f0" stroke-width="1"/>
+<text x="661" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">240</text>
+<line x1="760" y1="60" x2="760" y2="440" stroke="#e2e8f0" stroke-width="1"/>
+<text x="760" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">280</text>
+<rect x="70" y="60" width="236" height="380" fill="#3b82f6" opacity="0.08"/>
+<text x="188" y="90" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2563eb" text-anchor="middle">REVOKE-HDC Operating Regime (F ≤ 96)</text>
+<line x1="70" y1="116" x2="760" y2="116" stroke="#ef4444" stroke-width="2.5"/>
+<text x="750" y="108" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="end">Arm C Snapshot Baseline (512 Bytes)</text>
+<line x1="70" y1="430" x2="760" y2="76" stroke="#2563eb" stroke-width="3"/>
+<text x="130" y="405" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1d4ed8">Arm D Sparse Journal (16 + 2F Bytes)</text>
+<circle cx="681" cy="116" r="6" fill="#f59e0b" stroke="#b45309" stroke-width="2"/>
+<line x1="681" y1="60" x2="681" y2="440" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,4"/>
+<text x="689" y="138" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#b45309">Break-Even Point: F = 248 (512 B)</text>
+<circle cx="306" cy="309" r="6" fill="#10b981" stroke="#047857" stroke-width="2"/>
+<text x="314" y="301" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">F_max = 96 (208 B: 59.4% Memory Savings!)</text>
+<line x1="70" y1="440" x2="760" y2="440" stroke="#334155" stroke-width="1.5"/>
+<line x1="70" y1="60" x2="70" y2="440" stroke="#334155" stroke-width="1.5"/>
+<text x="415" y="486" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e293b">Flip Count / Affected Dimensions (F)</text>
+<text transform="rotate(-90)" x="-250" y="20" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e293b">Memory per Update (Bytes)</text>
+</svg>

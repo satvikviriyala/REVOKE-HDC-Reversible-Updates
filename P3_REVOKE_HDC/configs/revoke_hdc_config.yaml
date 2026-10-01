@@ -1,0 +1,72 @@
+# REVOKE-HDC Cohort Configuration (Week 1 Frozen)
+project: REVOKE_HDC
+team: P3
+cohort_freeze_version: v1.0
+
+architecture:
+  dimension_d: 4096
+  class_count: 4
+  word_width_bits: 64
+  words_per_class: 64
+  bytes_per_class: 512
+  endianness: little
+  threshold_convention: "sign_threshold(x) = 1 if x >= 0 else 0"
+
+wire_packet:
+  header_bytes: 16
+  entry_bytes: 3
+  max_entries_f: 96
+  length_formula: "16 + 3*F"
+  max_wire_bytes: 304
+  checksum_algorithm: "CRC-16/CCITT-FALSE"
+  crc16_poly: "0x1021"
+  crc16_init: "0xFFFF"
+
+journal_record:
+  header_bytes: 16
+  entry_bytes: 2
+  max_entries_f: 96
+  length_formula: "16 + 2*F"
+  max_record_bytes: 208
+  breakeven_f: 248
+  bram_capacity_bytes: 262144
+  index_table_depth: 1024
+  slot_id_bits: 10
+  ring_wrap_policy: "pad_to_end"
+
+arithmetic:
+  residue_bits: 4
+  residue_signed: true
+  residue_min: -8
+  residue_max: 7
+  contribution_bits: 4
+  contribution_signed: true
+  contribution_min: -8
+  contribution_max: 7
+  unencodable_positive_8: "refused_residue"
+
+admission:
+  theta_a: 128
+  theta_b: 128
+  require_modality_agreement: true
+  require_sequence_monotonicity: true
+
+outcomes:
+  0: accepted
+  1: quarantined
+  2: refused_capacity
+  3: refused_checksum
+  4: refused_residue
+  5: refused_stale
+  6: refused_duplicate
+  7: refused_ordering
+  8: refused_bit_state
+  9: restored
+  10: already_retired
+
+platform:
+  target_device: kv260
+  target_clock_mhz: 100.0
+  axi_lite_base: "0xA0000000"
+  axi_lite_size: "0x00010000"
+  trace_buffer_depth: 512

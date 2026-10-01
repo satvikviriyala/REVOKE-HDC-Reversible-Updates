@@ -1,0 +1,43 @@
+vector_id,residue,contribution,sum,old_bit,new_bit,verdict,reason,retained_failure
+V001,-8,-8,-16,0,0,accept,r and u are representable; threshold arithmetic shown,no
+V002,-8,-1,-9,0,0,accept,r and u are representable; threshold arithmetic shown,no
+V003,-8,0,-8,0,0,accept,r and u are representable; threshold arithmetic shown,no
+V004,-8,7,-1,0,0,accept,r and u are representable; threshold arithmetic shown,no
+V005,-7,-1,-8,0,0,accept,r and u are representable; threshold arithmetic shown,no
+V006,-7,7,0,0,1,accept,r and u are representable; threshold arithmetic shown,no
+V007,-6,6,0,0,1,accept,r and u are representable; threshold arithmetic shown,no
+V008,-5,-3,-8,0,0,accept,r and u are representable; threshold arithmetic shown,no
+V009,-5,5,0,0,1,accept,r and u are representable; threshold arithmetic shown,no
+V010,-5,7,2,0,1,accept,r and u are representable; threshold arithmetic shown,no
+V011,-4,-4,-8,0,0,accept,r and u are representable; threshold arithmetic shown,no
+V012,-4,3,-1,0,0,accept,r and u are representable; threshold arithmetic shown,no
+V013,-4,4,0,0,1,accept,r and u are representable; threshold arithmetic shown,no
+V014,-3,-5,-8,0,0,accept,r and u are representable; threshold arithmetic shown,no
+V015,-3,2,-1,0,0,accept,r and u are representable; threshold arithmetic shown,no
+V016,-3,3,0,0,1,accept,r and u are representable; threshold arithmetic shown,no
+V017,-2,-6,-8,0,0,accept,r and u are representable; threshold arithmetic shown,no
+V018,-2,1,-1,0,0,accept,r and u are representable; threshold arithmetic shown,no
+V019,-2,2,0,0,1,accept,r and u are representable; threshold arithmetic shown,no
+V020,-1,-7,-8,0,0,accept,r and u are representable; threshold arithmetic shown,no
+V021,-1,0,-1,0,0,accept,r and u are representable; threshold arithmetic shown,no
+V022,-1,1,0,0,1,accept,r and u are representable; threshold arithmetic shown,no
+V023,0,-8,-8,1,0,accept,r and u are representable; threshold arithmetic shown,no
+V024,0,-1,-1,1,0,accept,r and u are representable; threshold arithmetic shown,no
+V025,0,0,0,1,1,accept,r and u are representable; threshold arithmetic shown,no
+V026,0,7,7,1,1,accept,r and u are representable; threshold arithmetic shown,no
+V027,1,-8,-7,1,0,accept,r and u are representable; threshold arithmetic shown,no
+V028,1,-1,0,1,1,accept,r and u are representable; threshold arithmetic shown,no
+V029,1,0,1,1,1,accept,r and u are representable; threshold arithmetic shown,no
+V030,2,-3,-1,1,0,accept,r and u are representable; threshold arithmetic shown,no
+V031,2,-2,0,1,1,accept,r and u are representable; threshold arithmetic shown,no
+V032,2,5,7,1,1,accept,r and u are representable; threshold arithmetic shown,no
+V033,4,-5,-1,1,0,accept,r and u are representable; threshold arithmetic shown,no
+V034,4,-4,0,1,1,accept,r and u are representable; threshold arithmetic shown,no
+V035,7,-8,-1,1,0,accept,r and u are representable; threshold arithmetic shown,no
+V036,7,7,14,1,1,accept,r and u are representable; threshold arithmetic shown,no
+V037,7,8,,1,,refuse,conceptual +8 passes |u|<=8 wording but is not encodable in signed 4-bit two's-complement; retained failure exemplar,yes
+V038,0,9,,1,,refuse,contribution exceeds alphabet and is not encodable,no
+V039,0,-9,,1,,refuse,contribution magnitude/alphabet exceeded,no
+V040,8,0,,,,refuse,pre_update_residue outside signed 4-bit range,no
+V041,-9,0,,,,refuse,pre_update_residue outside signed 4-bit range,no
+V042,3,12,,1,,refuse,contribution exceeds alphabet and is not encodable,no

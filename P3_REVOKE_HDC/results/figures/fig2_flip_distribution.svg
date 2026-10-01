@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="400" y="32" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e293b">Figure 2: Measured Flip-Count Distribution (F) over 1,000 Admitted Updates</text>
+<line x1="70" y1="440" x2="760" y2="440" stroke="#e2e8f0" stroke-width="1"/>
+<text x="60" y="444" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#64748b">0</text>
+<line x1="70" y1="369" x2="760" y2="369" stroke="#e2e8f0" stroke-width="1"/>
+<text x="60" y="373" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#64748b">6</text>
+<line x1="70" y1="298" x2="760" y2="298" stroke="#e2e8f0" stroke-width="1"/>
+<text x="60" y="302" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#64748b">12</text>
+<line x1="70" y1="215" x2="760" y2="215" stroke="#e2e8f0" stroke-width="1"/>
+<text x="60" y="219" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#64748b">19</text>
+<line x1="70" y1="144" x2="760" y2="144" stroke="#e2e8f0" stroke-width="1"/>
+<text x="60" y="148" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#64748b">25</text>
+<line x1="70" y1="60" x2="760" y2="60" stroke="#e2e8f0" stroke-width="1"/>
+<text x="60" y="64" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#64748b">32</text>
+<line x1="70" y1="60" x2="70" y2="440" stroke="#e2e8f0" stroke-width="1"/>
+<text x="70" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">0</text>
+<line x1="213" y1="60" x2="213" y2="440" stroke="#e2e8f0" stroke-width="1"/>
+<text x="213" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">20</text>
+<line x1="357" y1="60" x2="357" y2="440" stroke="#e2e8f0" stroke-width="1"/>
+<text x="357" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">40</text>
+<line x1="501" y1="60" x2="501" y2="440" stroke="#e2e8f0" stroke-width="1"/>
+<text x="501" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">60</text>
+<line x1="645" y1="60" x2="645" y2="440" stroke="#e2e8f0" stroke-width="1"/>
+<text x="645" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">80</text>
+<line x1="760" y1="60" x2="760" y2="440" stroke="#e2e8f0" stroke-width="1"/>
+<text x="760" y="460" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">96</text>
+<rect x="70" y="440" width="12.2" height="0" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="84" y="405" width="12.2" height="35" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="98" y="440" width="12.2" height="0" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="113" y="393" width="12.2" height="47" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="127" y="334" width="12.2" height="106" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="141" y="345" width="12.2" height="95" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="156" y="239" width="12.2" height="201" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="170" y="322" width="12.2" height="118" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="185" y="262" width="12.2" height="178" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="199" y="167" width="12.2" height="273" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="213" y="179" width="12.2" height="261" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="228" y="120" width="12.2" height="320" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="242" y="132" width="12.2" height="308" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="256" y="25" width="12.2" height="415" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="271" y="72" width="12.2" height="368" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="285" y="-35" width="12.2" height="475" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="300" y="-70" width="12.2" height="510" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="314" y="-296" width="12.2" height="736" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="328" y="-236" width="12.2" height="676" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="343" y="-189" width="12.2" height="629" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="357" y="-106" width="12.2" height="546" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="371" y="-130" width="12.2" height="570" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="386" y="-118" width="12.2" height="558" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="400" y="-106" width="12.2" height="546" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="415" y="-46" width="12.2" height="486" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="429" y="-130" width="12.2" height="570" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="443" y="-35" width="12.2" height="475" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="458" y="96" width="12.2" height="344" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="472" y="1" width="12.2" height="439" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="486" y="96" width="12.2" height="344" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="501" y="167" width="12.2" height="273" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="515" y="203" width="12.2" height="237" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="530" y="286" width="12.2" height="154" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="544" y="369" width="12.2" height="71" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="558" y="322" width="12.2" height="118" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="573" y="369" width="12.2" height="71" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="587" y="369" width="12.2" height="71" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="601" y="357" width="12.2" height="83" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="616" y="393" width="12.2" height="47" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="630" y="417" width="12.2" height="23" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="645" y="429" width="12.2" height="11" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="659" y="440" width="12.2" height="0" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="673" y="417" width="12.2" height="23" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="688" y="417" width="12.2" height="23" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="702" y="429" width="12.2" height="11" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="716" y="429" width="12.2" height="11" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="731" y="440" width="12.2" height="0" fill="#3b82f6" rx="2" opacity="0.85"/>
+<rect x="745" y="440" width="12.2" height="0" fill="#3b82f6" rx="2" opacity="0.85"/>
+<line x1="361" y1="60" x2="361" y2="440" stroke="#10b981" stroke-width="2.5" stroke-dasharray="5,4"/>
+<text x="355" y="85" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857" text-anchor="end">Mean F = 40.6</text>
+<line x1="537" y1="60" x2="537" y2="440" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="5,4"/>
+<text x="543" y="105" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#b45309" text-anchor="start">p95 F = 65</text>
+<line x1="724" y1="60" x2="724" y2="440" stroke="#8b5cf6" stroke-width="2.5" stroke-dasharray="5,4"/>
+<text x="718" y="125" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6d28d9" text-anchor="end">Max F = 91</text>
+<line x1="70" y1="440" x2="760" y2="440" stroke="#334155" stroke-width="1.5"/>
+<line x1="70" y1="60" x2="70" y2="440" stroke="#334155" stroke-width="1.5"/>
+<text x="415" y="486" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e293b">Affected Dimensions per Update (F)</text>
+<text transform="rotate(-90)" x="-250" y="24" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e293b">Count of Updates</text>
+</svg>

@@ -1,0 +1,38 @@
+{
+  "campaign": "REVOKE-HDC Week 2 Exact Restoration Regression",
+  "total_admitted_updates": 1000,
+  "total_restorations": 1000,
+  "total_bit_mismatches": 0,
+  "golden_match": "y",
+  "flip_distribution": {
+    "min_F": 2,
+    "mean_F": 40.62,
+    "median_F": 40,
+    "p95_F": 65,
+    "max_F": 91
+  },
+  "record_size_bytes": {
+    "formula": "16 + 2*F",
+    "mean_bytes": 97.23,
+    "p95_bytes": 146,
+    "max_bytes": 198,
+    "frozen_maximum_supported": 208,
+    "snapshot_baseline_bytes": 512
+  },
+  "breakeven_analysis": {
+    "formula": "16 + 2*F < 512 => F < 248",
+    "updates_below_breakeven": 1000,
+    "breakeven_frequency_pct": 100.0
+  },
+  "invariants_checked": [
+    "Invariant 4: strict active -> restoring -> retired state transitions",
+    "Invariant 5: repeat restoration returns already_retired without bit flips",
+    "Invariant 6: restoration validates expected post-update bits before write",
+    "Invariant 7: refused/quarantined requests preserve prototype words and free_bytes",
+    "Invariant 9: accepted update followed by restore reproduces exact pre-update prototype",
+    "Invariant 10: no dimension written twice in single commit/restore",
+    "Invariant 11: restoration resolves matching class and update ID in reverse commit order",
+    "Invariant 12: exactly one outcome record and counter increment per request"
+  ],
+  "verdict": "GREEN"
+}

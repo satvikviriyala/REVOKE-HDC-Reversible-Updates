@@ -1,0 +1,29 @@
+run_id: P3_20261001_1000_w1-freeze
+date_utc: '2026-10-01T04:30:00Z'
+team: P3
+project: REVOKE_HDC
+device: kv260
+board_serial: KV260-02
+source_commit: e1f87a90b4c2
+dirty_tree: false
+bitstream_sha: pending_synthesis_w3
+toolchain_id: lab-2026.1
+mode: contract_freeze
+task: record_format_and_refusal_freeze
+arm: D
+status: completed
+failure_reason: none
+metric_name: max_record_bytes
+metric_value: 208
+golden_match: y
+notes: Week 1 contract freeze complete; F_max=96 yields 208-byte record; all 16 Section 10 decisions closed; 42 hand vectors validated.
+frozen_artifacts:
+  interface_contract: docs/interface_contract.md
+  validation_rules: docs/validation_rules.md
+  decision_log: docs/decision_log.md
+  sizing_sheet: docs/sizing_sheet.md
+  refusal_table: docs/refusal_table.md
+  ordering_state: docs/ordering_state.md
+  hand_vectors_csv: tests/hand_vectors.csv
+  config_json: configs/revoke_hdc_config.json
+  config_yaml: configs/revoke_hdc_config.yaml

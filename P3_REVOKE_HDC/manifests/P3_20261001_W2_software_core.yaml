@@ -1,0 +1,36 @@
+run_id: P3_20261001_1100_w2-exact-core
+date_utc: '2026-10-01T05:00:00Z'
+team: P3
+project: REVOKE_HDC
+device: kv260
+board_serial: KV260-02
+source_commit: e1f87a90b4c2
+dirty_tree: false
+bitstream_sha: pending_synthesis_w3
+toolchain_id: lab-2026.1
+mode: software_reference_core
+task: multi_modal_online_updates_1000
+arm: D
+status: completed
+failure_reason: none
+metric_name: restoration_mismatches
+metric_value: 0
+golden_match: y
+notes: >-
+  1,000-update exact restoration regression completed with 0 bit mismatches.
+  All 10 negative cases verified with untouched memory/journal.
+  Flip distribution: mean=40.62, median=40, p95=65, max=91.
+  Mean record size: 97.23 bytes (81.0% savings vs 512B snapshot).
+  100% of updates below F=248 break-even.
+instrumentation:
+  inst_refusals: 10
+  inst_queue_depth: 97230
+  inst_coalesced: 40620
+results_files:
+  exact_restoration_trace: results/raw/exact_restoration_1000.csv
+  flip_density_csv: results/raw/flip_density_1000.csv
+  negative_tests_csv: results/raw/negative_tests.csv
+  summary_json: results/processed/flip_density_summary.json
+  mismatch_report: results/processed/mismatch_summary.md
+  figure_flip_distribution: results/figures/fig2_flip_distribution.svg
+  figure_breakeven: results/figures/fig3_bytes_vs_f_breakeven.svg

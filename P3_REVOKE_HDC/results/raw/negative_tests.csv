@@ -1,0 +1,11 @@
+case_name,expected_outcome_name,expected_code,actual_code,status
+Corrupt Checksum,refused_checksum,3,3,PASS
+Duplicate Dimension,refused_duplicate,6,6,PASS
+Residue Exceeded,refused_residue,4,4,PASS
+Stale Old Bit,refused_stale,5,5,PASS
+Quarantined Margin,quarantined,1,1,PASS
+Out-of-Order Sequence,refused_ordering,7,7,PASS
+Journal Full,refused_capacity,2,2,PASS
+Out-of-Order Restoration,refused_ordering,7,7,PASS
+Corrupted Prototype Bit on Restore,refused_bit_state,8,8,PASS
+Repeat Restoration,already_retired,10,10,PASS

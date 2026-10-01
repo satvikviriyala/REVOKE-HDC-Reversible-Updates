@@ -1,0 +1,33 @@
+# Local environments and credentials
+.env
+.env.*
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# FPGA tool work directories and transient files
+.Xil/
+**/.Xil/
+*.jou
+*.str
+*.wdb
+*.pb
+build/
+dist/
+_x/
+
+# Large or machine-specific inputs
+data/raw/
+datasets/
+
+# Temporary results; retained evidence belongs under results/raw/
+results/tmp/
+tmp/
+*.tmp
