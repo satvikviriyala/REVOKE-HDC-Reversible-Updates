@@ -2,7 +2,37 @@
 
 ## Reversible updates for compact binary HDC prototypes
 
-Eight-week evaluation workbook: `EVALUATION.md`
+Eight-week evaluation workbook: `EVALUATION.md` | Decision Log: `docs/decision_log.md` | Friday Metrics: `../friday_metrics.csv`
+
+### Exact Reproduction Command Chain (Weeks 0, 1, 2)
+
+```bash
+# Execute entire verified chain in one command:
+bash scripts/run_all.sh
+
+# Or step-by-step:
+# 1. Setup & Week 0 Foundations
+bash scripts/run_week0.sh
+
+# 2. Software Reference & Week 1 Contract Verification
+bash scripts/run_week1.sh
+
+# 3. Tests & Negative Suite (Week 2)
+python3 tests/test_smallest_w2.py
+python3 tests/test_negative_cases.py
+
+# 4. Simulation (1,000-Update Exact Restoration Regression)
+python3 tests/test_exact_restoration.py
+
+# 5. Synthesis (Pending Week 3 RTL memories)
+# vivado -mode batch -source scripts/build_bitstream.tcl  [PENDING W3]
+
+# 6. Board Run on KV260 (Pending Week 5)
+# python3 scripts/run_board_demo.py                      [PENDING W5]
+
+# 7. Summary Figures
+python3 scripts/generate_figures.py
+```
 
 ### The 30-second brief
 

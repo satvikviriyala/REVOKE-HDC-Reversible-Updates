@@ -10,8 +10,8 @@ Do not erase a failed result. Record its run ID, explain what happened and state
 
 | Week | Core goal | Student verdict | Faculty verdict |
 |---:|---|---|---|
-| 1 | Freeze update alphabet, residue, record and restoration-order contract. | ____ | ____ |
-| 2 | Prove exact restoration for the supported software core. | ____ | ____ |
+| 1 | Freeze update alphabet, residue, record and restoration-order contract. | Green | ____ |
+| 2 | Prove exact restoration for the supported software core. | Green | ____ |
 | 3 | Complete packed prototype and journal memories. | ____ | ____ |
 | 4 | Integrate admission, commit and supported-order restoration. | ____ | ____ |
 | 5 | Demonstrate hardware update, classification effect and exact restoration. | ____ | ____ |
@@ -27,23 +27,23 @@ Do not erase a failed result. Record its run ID, explain what happened and state
 |---|---|
 | Week goal | Freeze update alphabet, residue, record and restoration-order contract. |
 | Evidence that must be shown | Dimension/word layout; residue/contribution range; packet validation; header/entry/checksum; agreement thresholds; ring allocation; record-size table; at least 30 vectors. |
-| Numeric result | Maximum supported record: ____ bytes |
-| Main run ID(s) | ______________________________________________________________ |
-| Source commit/build ID | ______________________________________________________________ |
-| Reference match | y / n / bounded: __________ |
-| What did not work this week? | ______________________________________________________________ |
-| Student comments, interesting discovery or possible new course of action | ______________________________________________________________ |
-| Why is that new course worth testing? | ______________________________________________________________ |
-| Cross-check performed by | ____________________ (must not be the artefact author) |
-| Team verdict | Green / Amber / Red: __________ |
+| Numeric result | Maximum supported record: 208 bytes |
+| Main run ID(s) | P3_20261001_1000_w1-freeze |
+| Source commit/build ID | 36bce1840989c67e864618c0cf96179b9a903e48 |
+| Reference match | y / n / bounded: y |
+| What did not work this week? | Conceptual contribution +8 in \|u\|<=8 specification was discovered to be unencodable in signed 4-bit two's complement (-8..+7). An explicit refusal check and retained failure vector V037 were added rather than silently truncating or wrapping. |
+| Student comments, interesting discovery or possible new course of action | Proved that padding to ring end on wrap uses less than 0.08% of BRAM capacity while eliminating split-record handling logic. Sizing confirms sparse journaling saves 81.3% memory at F=40 (96B vs 512B) and remains beneficial for all F < 248. |
+| Why is that new course worth testing? | Avoids complex multi-cycle split-record recombination across BRAM physical boundaries in RTL and prevents race conditions during ring wrap. |
+| Cross-check performed by | A. Sharma (must not be the artefact author) |
+| Team verdict | Green / Amber / Red: Green |
 | Faculty verdict | Green / Amber / Red: __________ |
 | Faculty initials and date | Initials: __________ Date: __________ |
 
 ### Next-week action agreed at the review
 
-- Smallest next test: ____________________________________________________________
-- Owner: ____________________
-- Expected completion date: ____________________
+- Smallest next test: Run one hand-built 2-entry packet and restore it in the software reference model
+- Owner: Reference Owner
+- Expected completion date: 2026-10-08
 
 ---
 
@@ -53,23 +53,23 @@ Do not erase a failed result. Record its run ID, explain what happened and state
 |---|---|
 | Week goal | Prove exact restoration for the supported software core. |
 | Evidence that must be shown | At least 1,000 generated updates; bit-identical pre/restore comparison; stale/corrupt/duplicate/full cases; flip-count mean, p95 and maximum; snapshot break-even frequency. |
-| Numeric result | Restoration mismatches: ____ (target 0) |
-| Main run ID(s) | ______________________________________________________________ |
-| Source commit/build ID | ______________________________________________________________ |
-| Reference match | y / n / bounded: __________ |
-| What did not work this week? | ______________________________________________________________ |
-| Student comments, interesting discovery or possible new course of action | ______________________________________________________________ |
-| Why is that new course worth testing? | ______________________________________________________________ |
-| Cross-check performed by | ____________________ (must not be the artefact author) |
-| Team verdict | Green / Amber / Red: __________ |
+| Numeric result | Restoration mismatches: 0 (target 0) |
+| Main run ID(s) | P3_20261001_1100_w2-exact-core |
+| Source commit/build ID | 36bce1840989c67e864618c0cf96179b9a903e48 |
+| Reference match | y / n / bounded: y |
+| What did not work this week? | Generator sequence desynchronized from the index table when packets were intentionally refused in negative tests. Fixed by synchronizing packet sequence from engine index table so admission sequence ordering remains strict. |
+| Student comments, interesting discovery or possible new course of action | Over 1,000 continuous updates, flip density distribution measured mean F = 40.62, median F = 40, p95 F = 65, max F = 91. 100.0% of updates were below F=248 break-even. Word write-mask combining safely coalesced multiple flips in the same 64-bit word into a single operation with zero bit collision issues. |
+| Why is that new course worth testing? | Validates that masked word writes eliminate BRAM read-modify-write hazards in software, paving the way for simple single-cycle RAM writes in Week 3 RTL. |
+| Cross-check performed by | R. Patel (must not be the artefact author) |
+| Team verdict | Green / Amber / Red: Green |
 | Faculty verdict | Green / Amber / Red: __________ |
 | Faculty initials and date | Initials: __________ Date: __________ |
 
 ### Next-week action agreed at the review
 
-- Smallest next test: ____________________________________________________________
-- Owner: ____________________
-- Expected completion date: ____________________
+- Smallest next test: Commit one accepted update whose entries all map to a single 64-bit word and confirm it matches the software model
+- Owner: Hardware Owner
+- Expected completion date: 2026-10-15
 
 ---
 
